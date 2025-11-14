@@ -1,163 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>event name</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #0d0d0d;
-      color: #e6e6e6;
-      font-family: "Inter", sans-serif;
-    }
-
-    header {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #111111;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      border-bottom: 1px solid #222;
-    }
-
-    header h1 {
-      font-size: 24px;
-      margin: 0;
-      font-weight: 600;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      font-size: 15px;
-      transition: 0.2s ease;
-    }
-
-    nav a:hover {
-      color: #fff;
-    }
-
-    /* Dropdown */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #111;
-      min-width: 200px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
-      z-index: 1;
-      border-radius: 5px;
-    }
-
-    .dropdown-content a {
-      color: #ccc;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      font-size: 14px;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #222;
-      color: #fff;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .hero {
-      padding: 120px 40px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #b3b3b3;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .gallery {
-      padding: 40px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 10px;
-      background: #222;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Lightbox */
-    #lightbox {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.9);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    #lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #000;
-    }
-
-    #lightbox:after {
-      content: '✖';
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: #fff;
-      font-size: 30px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      margin-top: 60px;
-      color: #666;
-      font-size: 14px;
-      border-top: 1px solid #222;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruise 2025/26 Show in Singapore</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Shared header -->
   <header>
     <h1>selene lim</h1>
     <nav>
@@ -173,8 +23,8 @@
       <div class="dropdown">
         <a href="#">Events ▼</a>
         <div class="dropdown-content">
-          <a href="event1.html">CKSG Event</a>
-          <a href="event2.html">Event 2</a>
+          <a href="event1.html">Polo Ralph Lauren 10th Anniversary</a>
+          <a href="event2.html">Cruise 2025/26 Show in Singapore</a>
           <a href="event3.html">Event 3</a>
         </div>
       </div>
@@ -182,39 +32,44 @@
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <h2>Top Picks</h2>
-    <p>A curated selection of my favourite shots across multiple events. Click on an image below to view the full event gallery.</p>
+  <!-- Hero section -->
+  <section class="hero">
+    <h2>Cruise 2025/26 Show in Singapore</h2>
+    <p>Highlights from the Cruise 2025/26 Show in Singapore. Click an image to view it in full size.</p>
   </section>
 
-  <section class="gallery" id="gallery">
-    <img src="images/CKSG-01.jpg" alt="CKSG Photo 1" data-full="images/CKSG-01.jpg" />
-    <img src="images/CKSG-03.jpg" alt="CKSG Photo 2" data-full="images/CKSG-03.jpg" />
-    <img src="images/CKSG-07.jpg" alt="CKSG Photo 3" data-full="images/CKSG-07.jpg" />
+  <!-- Gallery -->
+  <section class="gallery">
+    <img src="images/CHANEL_CRUISE/BECKY-04.jpg" alt="CC 1" class="lightbox-img">
+    <img src="images/CHANEL_CRUISE/BECKY-05.jpg" alt="CC 2" class="lightbox-img">
+    <img src="images/CHANEL_CRUISE/BECKY-06.jpg" alt="CC 3" class="lightbox-img">
+    <img src="images/CHANEL_CRUISE/BECKY-07.jpg" alt="CC 4" class="lightbox-img">
   </section>
 
-  <div id="lightbox"></div>
+  <!-- Lightbox overlay -->
+  <div id="lightbox" style="display:none; position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;z-index:1000;">
+    <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+  </div>
 
+  <!-- Shared footer -->
   <footer>
     © 2025 selene lim — All Rights Reserved
   </footer>
 
+  <!-- Lightbox JS -->
   <script>
     const lightbox = document.getElementById('lightbox');
-    const images = document.querySelectorAll('.gallery img');
-
-    images.forEach(img => {
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('.lightbox-img').forEach(img => {
       img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
         lightbox.style.display = 'flex';
-        lightbox.innerHTML = `<img src='${img.dataset.full}' alt='${img.alt}' />`;
       });
     });
-
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox || e.target.tagName === 'IMG') {
-        lightbox.style.display = 'none';
-      }
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
     });
   </script>
 </body>
 </html>
+

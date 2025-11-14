@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polo Ralph Lauren 10th Anniversary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared header -->
+  <header>
+    <h1>selene lim</h1>
+    <nav>
+      <a href="index.html">Top Picks</a>
+      <div class="dropdown">
+        <a href="#">Concerts ▼</a>
+        <div class="dropdown-content">
+          <a href="concert1.html">Paradigm Live in Singapore</a>
+          <a href="concert2.html">Event 2</a>
+          <a href="concert3.html">Event 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Events ▼</a>
+        <div class="dropdown-content">
+          <a href="event1.html">Polo Ralph Lauren 10th Anniversary</a>
+          <a href="event2.html">Cruise 2025/26 Show in Singapore</a>
+          <a href="event3.html">Event 3</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <h2>Polo Ralph Lauren 10th Anniversary</h2>
+    <p>Highlights from the Polo Ralph Lauren 10th Anniversary. Click an image to view it in full size.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <img src="images/RL10/RL-31.jpg" alt="RL Photo 1" class="lightbox-img">
+    <img src="images/RL10/RL-35.jpg" alt="RL Photo 2" class="lightbox-img">
+    <img src="images/CKSG-07.jpg" alt="Paradigm Photo 3" class="lightbox-img">
+    <img src="images/CKSG-14.jpg" alt="Paradigm Photo 4" class="lightbox-img">
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" style="display:none; position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;z-index:1000;">
+    <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+  </div>
+
+  <!-- Shared footer -->
+  <footer>
+    © 2025 selene lim — All Rights Reserved
+  </footer>
+
+  <!-- Lightbox JS -->
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('.lightbox-img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
+
