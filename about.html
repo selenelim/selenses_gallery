@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About selene lim</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+      font-family: "Inter", sans-serif;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111111;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #111;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: #ccc;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .about-section {
+      padding: 100px 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 16px;
+      color: #b3b3b3;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-section a {
+      color: #1da1f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .about-section a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+      color: #666;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>selene lim</h1>
+    <nav>
+      <a href="index.html">Top Picks</a>
+      <div class="dropdown">
+        <a href="#">Concerts ▼</a>
+        <div class="dropdown-content">
+          <a href="concert1.html">Paradigm Live in Singapore</a>
+          <a href="concert2.html">Event 2</a>
+          <a href="concert3.html">Event 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Events ▼</a>
+        <div class="dropdown-content">
+          <a href="event1.html">CKSG Event</a>
+          <a href="event2.html">Event 2</a>
+          <a href="event3.html">Event 3</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>About Me</h2>
+    <p>Hi, I'm Selene Lim, a concert and event photographer. I love capturing live moments and creating galleries that tell stories through my lens.</p>
+    <p>My photography spans fanmeets, live shows, and various special events. I also experiment with lighting, angles, and composition to make each shot unique.</p>
+    <p>Besides photography, I enjoy exploring creative technologies and combining hardware projects with software to produce interactive experiences.</p>
+    <p>Follow me on Instagram: 
+      <a href="https://www.instagram.com/selenses.jpg" target="_blank">@selenses.jpg</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 selene lim — All Rights Reserved
+  </footer>
+
+</body>
+</html>
